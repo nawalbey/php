@@ -22,15 +22,22 @@ Dans le fichier HTML, assurez-vous que le formulaire envoie les données soumise
 (traitement_inscription.php) en utilisant la méthode POST. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <?php
 
-    
-    ?>
+<body>
+
+    <form action="traitement_inscription.php" method="POST">
+        nom<input type="text" name="name" />
+        Entrez Votre E-Mail: <input type="email" name="user_email" />
+        password<input type="text" name="password" />
+        confirmation<input type="text" name="confirmer" />
+        <input type="submit" name="envoyer" value="Envoyer" />
+    </form>
 </body>
+
 </html>
